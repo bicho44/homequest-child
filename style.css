@@ -1,0 +1,260 @@
+/*
+Theme Name: RealEstateAtBlue Child
+Theme URI: http://themefuse.com/demo/wp/homequest/
+Description: Child theme for the HomeQuest. Child themes are the recommended way of making modifications to a theme. <a href="http://codex.wordpress.org/Child_Themes">Reade More</a>
+Author: Celeste Berges
+Author URI: http://pandorawebservices.ca
+Template: homequest-parent
+*/
+
+@import url("../homequest-parent/style.css");
+@import url("../homequest-parent/screen.css");
+
+.middle .container_12 {
+    padding: 0 0 50px 0;
+}
+
+.header {
+    background: #fff none;
+}
+
+.header_top {
+    padding-top: 10px;
+    height: auto;
+    /*border-top: 15px solid #e5352c;*/
+    border-bottom: 1px dashed #666;
+/*
+    position: relative;
+    text-align: center;
+    width: 100%;
+    margin-left:0;
+    z-index: 20;
+*/
+}
+.header_slider .slider_ribbon {
+    background: none;
+    display: none;
+}
+
+.header_slider {
+    width: 100%;
+    background: none; /*url('images/header_slider_bg.png') 0 0 no-repeat;*/
+    padding: 19px 0 0 0;
+    margin-left:0;
+}
+
+.header_slider .slides_container, .header_slider .slide {
+    width: 100%;
+}
+
+.header_slider .caption {
+    width: 100%;
+}
+
+.header_inner {
+    background: #fff none;
+    padding-top: 10px;
+    border-top: 15px solid #e5352c;
+}
+
+.topmenu {
+    float: none;
+    padding-top: 20px;
+    margin: 0 auto;
+}
+.topmenu .dropdown  {
+    font-size:14px;
+    float: none;
+}
+.topmenu .dropdown li a {
+    color: #333;
+    text-shadow: none;
+}
+
+.search_home {
+    background: url("images/header_slider_bg2.png") no-repeat scroll -3px 0 rgba(0, 0, 0, 0);
+    /*height: 422px;*/
+    padding: 5px 20px 0 0;
+    /*position: absolute;*/
+
+    width: 323px;
+    z-index: 10;
+}
+
+.greg {
+    font-weight:bold;
+    color:#000;
+}
+
+.greg a {
+    color: #e5352c;
+}
+
+.social_media {
+    text-align:center;
+}
+
+.phonenumber {
+    
+}
+
+.phonenumber img, .header_textme img {
+    min-width: 100%;
+    height: auto;
+}
+/* Ventanita tipo ipad del bucador
+Le almpliamos el alto */
+.search_home {
+    height: 426px;
+}
+/*
+    titulos en el buscador
+    Pequeño ajuste pa que no tenga tanto aire
+*/
+.search_home .search_title {
+    padding: 10px 0 0 0;
+}
+
+.sp .btn {
+    -moz-border-color: transparent;
+    background-color: #F5F5F5;
+    background-image: linear-gradient(to bottom, #333333, #E6E6E6) !important;
+    background-repeat: repeat-x;
+    border-color: #CCCCCC #CCCCCC #B3B3B3;
+    border-image: none;
+    border-radius: 4px;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 2px rgba(0, 0, 0, 0.05);
+    color: #333333;
+    display: inline-block;
+    font-size: 13px !important;
+    line-height: 15px !important;
+    margin-bottom: 0;
+    padding: 3px 7px;
+    text-align: center;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+    vertical-align: middle;
+}
+.sp input[type="button"] {
+    margin-left:6em !important;
+}
+
+.sp .btn-block{
+    width:50% !important;
+    margin-left:3em !important;
+}
+.sp form{
+    margin-top:1.5em !important;
+    margin-left:2em !important;
+    width:100% !important;
+}
+
+.sp label{
+    margin-bottom:3px !important;
+    color:#999;
+    font-family:Verdana, Geneva, sans-serif;
+    font-size:1.1em !important;
+}
+
+/*carusel*/
+.before_content .carusel_list li,
+.header_carusel .carusel_list li{
+    background:none !important;
+    
+}
+
+
+.title_up{
+    font-family:'Verdana', Geneva, sans-serif;
+}
+
+.col_1_2 {
+    font-weight:bold !important;
+    font-family:'Verdana', Geneva, sans-serif !important;
+    
+}
+.fb-iframe-widget{
+    margin-right:10px;
+}
+
+#widget_bounds{
+    margin-top:20px !important;
+}
+
+.footer h3{
+    margin: 0 0 35px !important;
+}
+
+/*listing search*/
+
+.widget .well3{
+    background-color:#000 !important;
+}
+.sp button.btn{
+    margin-left:4em !important;	
+    
+}
+/* Media Querys */
+@media only screen and (min-width: 280px){
+    .greg, .phonenumber {
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 768px){
+    .topmenu {
+        display: none;
+    }
+    .dropdown {
+        position: absolute;
+        top:-500px
+    }
+    #topm-select {
+        width:200px;
+        height:29px;
+        line-height:24px;
+        padding:5px;
+        margin:0 0 0 55px;
+        background: #999 none;
+
+        border: 1px solid #171717;
+        border-bottom: 1px solid #636363;
+
+        -webkit-border-radius: 5px;
+        border-radius: 5px;
+        color:#000;
+        font-size:15px;
+    }
+    #topm-select option { padding:3px 5px 3px 5px}
+}
+@media only screen and (min-width: 769px) {
+
+    #topmenu-select {
+        display:none;
+    }
+
+}
+
+/*
+@media only screen and (min-width: 1280px){
+    .header_slider {
+        background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+        height: 407px;
+        left: -150px;
+        padding: 19px 0 0 12px;
+        position: relative;
+        width: 1280px;
+    }
+
+    .header_slider .slides_container, .header_slider .slide, .header_slider .caption{
+        width:1280px;
+    }
+    .header_slider .slide{
+        border:10px solid #333;
+    }
+    .search_home{
+        right:-182px;
+    }
+}
+
+*/

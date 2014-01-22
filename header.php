@@ -42,7 +42,7 @@ else {  wp_title( '|', true, 'right' );bloginfo( 'name' );
     
 </head>
 <body <?php body_class(); ?>>
-    <!--
+  
 <div id="fb-root"></div>
 <script>(function(d, s, id) {
 var js, fjs = d.getElementsByTagName(s)[0];
@@ -51,7 +51,7 @@ js = d.createElement(s); js.id = id;
 js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=1380595662178099";
 fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
--->
+
     <div class="body_wrap">
         <div class="header" <?php //tfuse_header_background(); ?>>
             <div class="header_inner">
@@ -85,7 +85,7 @@ fjs.parentNode.insertBefore(js, fjs);
                                 <a href="http://www.pinterest.com/pin/43558321367428230/" target="_blank"><img src="<?php echo get_stylesheet_directory_uri().'/images/pinterest.png'; ?>" ></a>
                                 <a href="https://plus.google.com/116728886333830775394" target="_blank"><img src="<?php echo get_stylesheet_directory_uri().'/images/google.png'; ?>" ></a>
                                 <a href="http://www.youtube.com/user/GregSyrota" target="_blank"><img src="<?php echo get_stylesheet_directory_uri().'/images/youtube.png'; ?>"></a>
-                                <a href="https://www.realestateatblue.com/category/blog" target="_blank"><img src="<?php echo get_stylesheet_directory_uri().'/images/blog.png'; ?>"></a>
+                                <a href="http://www.realestateatblue.com/category/blog" target="_blank"><img src="<?php echo get_stylesheet_directory_uri().'/images/blog.png'; ?>"></a>
                             </div>
                         </div><!-- end col_1_3 -->
                         <div class="col col_1_4">

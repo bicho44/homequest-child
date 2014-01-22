@@ -10,8 +10,8 @@ Template: homequest-parent
 @import url("../homequest-parent/style.css");
 @import url("../homequest-parent/screen.css");
 
-.middle .container_12 {
-    padding: 0 0 50px 0;
+.body_wrap{
+ border-top: 15px solid #e5352c;
 }
 
 .header {
@@ -21,8 +21,7 @@ Template: homequest-parent
 .header_top {
     padding-top: 10px;
     height: auto;
-    /*border-top: 15px solid #e5352c;*/
-    border-bottom: 1px dashed #666;
+    border-bottom: 1px solid #333;
 /*
     position: relative;
     text-align: center;
@@ -30,31 +29,6 @@ Template: homequest-parent
     margin-left:0;
     z-index: 20;
 */
-}
-.header_slider .slider_ribbon {
-    background: none;
-    display: none;
-}
-
-.header_slider {
-    width: 100%;
-    background: none; /*url('images/header_slider_bg.png') 0 0 no-repeat;*/
-    padding: 19px 0 0 0;
-    margin-left:0;
-}
-
-.header_slider .slides_container, .header_slider .slide {
-    width: 100%;
-}
-
-.header_slider .caption {
-    width: 100%;
-}
-
-.header_inner {
-    background: #fff none;
-    padding-top: 10px;
-    border-top: 15px solid #e5352c;
 }
 
 .topmenu {
@@ -71,26 +45,57 @@ Template: homequest-parent
     text-shadow: none;
 }
 
+/*
+.header_inner {
+    background:#333 repeat scroll 0px 0px transparent;
+}
+
 .search_home {
     background: url("images/header_slider_bg2.png") no-repeat scroll -3px 0 rgba(0, 0, 0, 0);
-    /*height: 422px;*/
-    padding: 5px 20px 0 0;
-    /*position: absolute;*/
-
+    height: 422px;
+    padding: 5px 20px 70px 0;
+    position: absolute;
+    right: -1.8em;
+    top: 14px;
     width: 323px;
     z-index: 10;
 }
+*/
+
+
+.header_slider .slider_ribbon {
+        display: none;
+}
+/*
+.header_slider {
+    width: 100%;
+    background: url(images/header_slider_bg.png) 0 0 no-repeat;
+    padding:19px 0 0 0px;
+    margin-left:0;
+}
+
+.header_slider .slides_container, .header_slider .slide {
+    width: 100%;
+}
+
+.header_slider .caption {
+    width: 100%;
+}
+*/
+
+
+/*end slider */
 
 .greg {
     font-weight:bold;
     color:#000;
 }
 
-.greg a {
-    color: #e5352c;
+.greg a{
+    color:#e5352c;
 }
 
-.social_media {
+.social_media{
     text-align:center;
 }
 
@@ -98,7 +103,7 @@ Template: homequest-parent
     
 }
 
-.phonenumber img, .header_textme img {
+.phonenumber img,.header_textme img {
     min-width: 100%;
     height: auto;
 }
@@ -109,7 +114,7 @@ Le almpliamos el alto */
 }
 /*
     titulos en el buscador
-    Pequeño ajuste pa que no tenga tanto aire
+    Pequwño ajuste pa que no tenga tanto aire
 */
 .search_home .search_title {
     padding: 10px 0 0 0;
@@ -146,7 +151,7 @@ Le almpliamos el alto */
 }
 .sp form{
     margin-top:1.5em !important;
-    margin-left:2em !important;
+    margin-left:1em !important;
     width:100% !important;
 }
 
@@ -157,7 +162,11 @@ Le almpliamos el alto */
     font-size:1.1em !important;
 }
 
+
+
 /*carusel*/
+
+
 .before_content .carusel_list li,
 .header_carusel .carusel_list li{
     background:none !important;
@@ -188,21 +197,30 @@ Le almpliamos el alto */
 
 /*listing search*/
 
-.widget .well3{
+.widget well3{
     background-color:#000 !important;
 }
 .sp button.btn{
     margin-left:4em !important;	
     
 }
-/* Media Querys */
-@media only screen and (min-width: 280px){
+@media only screen and (max-width: 480px){
+
+
     .greg, .phonenumber {
         text-align: center;
-    }
+        }
+    .phonenumber{
+       padding-left:20px;
+       }
 }
 @media only screen and (max-width: 768px){
-    .topmenu {
+
+  .phonenumber{
+    max-width:80%;
+    padding-left:40px;
+   } 
+   .topmenu {
         display: none;
     }
     .dropdown {
@@ -214,10 +232,10 @@ Le almpliamos el alto */
         height:29px;
         line-height:24px;
         padding:5px;
-        margin:0 0 0 55px;
+        margin:0 0 0 80px;
         background: #999 none;
 
-        border: 1px solid #171717;
+        border:1px solid #171717;
         border-bottom: 1px solid #636363;
 
         -webkit-border-radius: 5px;
@@ -225,36 +243,52 @@ Le almpliamos el alto */
         color:#000;
         font-size:15px;
     }
-    #topm-select option { padding:3px 5px 3px 5px}
+    #topm-select option { padding:3px 5px 5px 5px}
+    
+    .social_media, .header_textme{
+     padding-top:20px;
+     }
+ 
+    .social_media img{
+     width: 25px;
+     height:25px;
+     }
+
+ .sp form{
+    margin-top:1.5em !important;
+    margin-left:0.1em !important;
+    width:100% !important;
+}
+.f_col_1, .f_col_2, .f_col_3, .f_col_4{
+  width:300px;
+  margin-left: 30px;
+  }
 }
 @media only screen and (min-width: 769px) {
 
-    #topmenu-select {
+    #topmenu-select{
         display:none;
     }
 
 }
 
-/*
 @media only screen and (min-width: 1280px){
-    .header_slider {
-        background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
-        height: 407px;
-        left: -150px;
-        padding: 19px 0 0 12px;
-        position: relative;
-        width: 1280px;
-    }
-
-    .header_slider .slides_container, .header_slider .slide, .header_slider .caption{
-        width:1280px;
-    }
-    .header_slider .slide{
-        border:10px solid #333;
-    }
-    .search_home{
-        right:-182px;
-    }
+.header_slider {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+    height: 407px;
+    left: -150px;
+    padding: 19px 0 0 12px;
+    position: relative;
+    width: 1280px;
 }
 
-*/
+.header_slider .slides_container, .header_slider .slide, .header_slider .caption{
+ width:1280px;
+}
+.header_slider .slide{
+ border:10px solid #333;
+ }
+.search_home{
+right:-182px;
+}
+}

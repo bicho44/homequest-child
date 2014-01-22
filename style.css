@@ -102,10 +102,11 @@ Template: homequest-parent
 .phonenumber {
     
 }
-
+/* Ajuste de imagenes automáticos */
 .phonenumber img,.header_textme img {
-    min-width: 100%;
-    height: auto;
+    min-width: 100% !important;
+    width: 100%;
+    height: auto !important;
 }
 /* Ventanita tipo ipad del bucador
 Le almpliamos el alto */
@@ -114,24 +115,26 @@ Le almpliamos el alto */
 }
 /*
     titulos en el buscador
-    Pequwño ajuste pa que no tenga tanto aire
+    Pequeño ajuste pa que no tenga tanto aire
 */
 .search_home .search_title {
     padding: 10px 0 0 0;
 }
 
 .sp .btn {
-    -moz-border-color: transparent;
     background-color: #F5F5F5;
     background-image: linear-gradient(to bottom, #333333, #E6E6E6) !important;
     background-repeat: repeat-x;
+    -moz-border-color: transparent;
     border-color: #CCCCCC #CCCCCC #B3B3B3;
+
     border-image: none;
     border-radius: 4px;
     border-style: solid;
     border-width: 1px;
+
     box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 2px rgba(0, 0, 0, 0.05);
-    color: #333333;
+    color: #333;
     display: inline-block;
     font-size: 13px !important;
     line-height: 15px !important;
@@ -146,8 +149,8 @@ Le almpliamos el alto */
 }
 
 .sp .btn-block{
-    width:50% !important;
-    margin-left:3em !important;
+    /*width:70% !important;*/
+    /*margin-left:3em !important;*/
 }
 .sp form{
     margin-top:1.5em !important;
@@ -165,14 +168,10 @@ Le almpliamos el alto */
 
 
 /*carusel*/
-
-
 .before_content .carusel_list li,
 .header_carusel .carusel_list li{
     background:none !important;
-    
 }
-
 
 .title_up{
     font-family:'Verdana', Geneva, sans-serif;
@@ -204,22 +203,21 @@ Le almpliamos el alto */
     margin-left:4em !important;	
     
 }
-@media only screen and (max-width: 480px){
-
-
+@media only screen and (max-width: 480px) {
     .greg, .phonenumber {
         text-align: center;
         }
     .phonenumber{
-       padding-left:20px;
+       /*padding-left:20px;*/
        }
 }
 @media only screen and (max-width: 768px){
 
-  .phonenumber{
+  /*.phonenumber{
     max-width:80%;
     padding-left:40px;
-   } 
+   }*/
+
    .topmenu {
         display: none;
     }
@@ -254,18 +252,17 @@ Le almpliamos el alto */
      height:25px;
      }
 
- .sp form{
-    margin-top:1.5em !important;
-    margin-left:0.1em !important;
-    width:100% !important;
-}
-.f_col_1, .f_col_2, .f_col_3, .f_col_4{
-  width:300px;
-  margin-left: 30px;
-  }
+     .sp form{
+        margin-top:1.5em !important;
+        margin-left:0.1em !important;
+        width:100% !important;
+        }
+    .f_col_1, .f_col_2, .f_col_3, .f_col_4{
+      width:300px;
+      margin-left: 30px;
+     }
 }
 @media only screen and (min-width: 769px) {
-
     #topmenu-select{
         display:none;
     }
@@ -273,22 +270,22 @@ Le almpliamos el alto */
 }
 
 @media only screen and (min-width: 1280px){
-.header_slider {
-    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
-    height: 407px;
-    left: -150px;
-    padding: 19px 0 0 12px;
-    position: relative;
-    width: 1280px;
-}
+    .header_slider {
+        background: none;
+        height: 407px;
+        left: -150px;
+        padding: 19px 0 0 12px;
+        position: relative;
+        width: 1280px;
+    }
 
-.header_slider .slides_container, .header_slider .slide, .header_slider .caption{
- width:1280px;
-}
-.header_slider .slide{
- border:10px solid #333;
- }
-.search_home{
-right:-182px;
-}
+    .header_slider .slides_container, .header_slider .slide, .header_slider .caption{
+        width:1280px;
+    }
+    .header_slider .slide {
+        border:10px solid #333;
+     }
+    .search_home {
+        right:-182px;
+    }
 }

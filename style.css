@@ -146,7 +146,7 @@ Le almpliamos el alto */
     vertical-align: middle;
 }
 .sp input[type="button"] {
-    margin-left:6em !important;
+    margin-left: 6em !important;
 }
 
 .sp .btn-block{
@@ -154,9 +154,9 @@ Le almpliamos el alto */
     /*margin-left:3em !important;*/
 }
 .sp form{
-    margin-top:1.5em !important;
+    /*margin-top:1.5em !important;
     margin-left:1em !important;
-    width:100% !important;
+    width:100% !important;*/
 }
 
 .sp label{
@@ -197,13 +197,18 @@ Le almpliamos el alto */
 
 /*listing search*/
 
-.widget well3{
+.widget well3 {
     background-color:#000 !important;
 }
 .sp button.btn{
-    margin-left:4em !important;	
-    
+    margin-left:4em !important;
 }
+
+/* Cambiamos el espaciado al slider ya que es muy alto */
+.middle .container_12 {
+    padding: 0 0 70px 0;
+}
+
 @media only screen and (max-width: 480px) {
     .greg, .phonenumber {
         text-align: center;

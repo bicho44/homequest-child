@@ -45,11 +45,12 @@ Template: homequest-parent
     text-shadow: none;
 }
 
-/*
-.header_inner {
-    background:#333 repeat scroll 0px 0px transparent;
-}
 
+.header_inner {
+    /* Tenia un backgound que no usabamos, asi que adios */
+    background: none;
+}
+/*
 .search_home {
     background: url("images/header_slider_bg2.png") no-repeat scroll -3px 0 rgba(0, 0, 0, 0);
     height: 422px;
